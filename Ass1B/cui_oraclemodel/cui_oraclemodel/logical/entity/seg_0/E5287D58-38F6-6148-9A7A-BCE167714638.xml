@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E5287D58-38F6-6148-9A7A-BCE167714638" name="CONTRACT">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:54:16 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contract_no" id="A84FE571-FB4D-D51B-F968-076E3D61FE85">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:54:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contract_startDate" id="0465510C-9A92-A023-3B10-C46A271091CF">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:54:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract start date]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contract_endDate" id="3062D01B-4EAF-588A-EB95-95754055F4FD">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:54:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract_endDate]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="la_name" id="73E650AF-0537-D52E-1AA3-07B438A974CE">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 07:03:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[local authority name]]></commentInRDBMS>
+<generatorID>E9AC48A1-3A68-BFC5-34CE-DA79AADC19CF</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<referedAttribute>91F1B232-DEE3-46E6-FB1D-00BA17AEE7F3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="91827DD1-AA3F-CD12-D7EA-CE679EB68C44" name="CONTRACT PK">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:54:30 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A84FE571-FB4D-D51B-F968-076E3D61FE85</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="collection_bincollected" directorySegmentName="seg_0" id="4635AC26-6AF4-4397-0F39-8FBF0972DC7E">
+<createdBy>kabil</createdBy>
+<createdTime>2023-04-30 05:58:26 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<sourcePk>B90818D4-77AC-B233-17EC-459804DC220D</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>collects</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1187EEC6-0CB3-72CE-E554-A12DFDEFA4C5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>52080582-F4E4-E454-E32C-A5207D889C66</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

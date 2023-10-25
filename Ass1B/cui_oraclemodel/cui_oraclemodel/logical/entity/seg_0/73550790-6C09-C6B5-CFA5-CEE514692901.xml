@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="73550790-6C09-C6B5-CFA5-CEE514692901" name="WASTE_TYPE">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:49:50 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="wt_id" id="254917ED-4D03-9AF1-8960-560520578DC2">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:49:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste type id]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="wt_desc" id="D1DD8A0F-8C51-7826-9E45-98B497B8D58C">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:50:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste type description]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CC67FC16-F456-544C-6C3E-720D333FB257" name="WASTE_TYPE PK">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:50:24 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>254917ED-4D03-9AF1-8960-560520578DC2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

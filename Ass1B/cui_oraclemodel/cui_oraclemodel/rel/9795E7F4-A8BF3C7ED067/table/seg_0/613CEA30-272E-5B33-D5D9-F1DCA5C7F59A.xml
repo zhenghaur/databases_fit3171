@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="613CEA30-272E-5B33-D5D9-F1DCA5C7F59A" name="TRUCK">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<generatorID>1D6CE21C-5315-C7CA-C19C-EA537F084182</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="truck_vin" id="2AB7D966-E798-282C-5C6D-A8BE69006E96">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[truck VIN]]></commentInRDBMS>
+<generatorID>6B143FB2-6D02-EAA0-E089-181CB8CA5143</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="truck_rego" id="EDACC8D2-D45D-9E4A-16CF-9736B652A5A0">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[truck registration number]]></commentInRDBMS>
+<generatorID>F6FB43BA-E8BB-4E39-CCC9-9ACFDB3D6957</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="truck_make" id="C23770F0-05C9-0074-BA71-77CB821CA57C">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[truck make]]></commentInRDBMS>
+<generatorID>A1A29F35-D94E-35A0-8EEC-909130DE5DF4</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="truck_model" id="92FFF993-418D-42EE-0CA8-0B013ACD698A">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[truck model]]></commentInRDBMS>
+<generatorID>6619F322-C2E8-F5D5-68D3-C15BB6F8126F</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="truck_year" id="F1255511-F246-2EB4-4A69-0C019C1D22A4">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[truck year of manufacture]]></commentInRDBMS>
+<generatorID>F247896A-E801-A534-F92A-9CA34009E003</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="194A30A8-7FEA-A54A-0251-2BFAFAB117AD" name="TRUCK_PK">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<generatorID>72CAF36E-2D47-9578-C9D6-29CA303E87BC</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AB7D966-E798-282C-5C6D-A8BE69006E96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

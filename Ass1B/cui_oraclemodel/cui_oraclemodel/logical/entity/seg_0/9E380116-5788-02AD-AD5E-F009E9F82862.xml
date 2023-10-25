@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9E380116-5788-02AD-AD5E-F009E9F82862" name="LOCAL_AUTHORITY">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:09:55 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="la_name" id="91F1B232-DEE3-46E6-FB1D-00BA17AEE7F3">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:10:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[local authority name]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="la_ceoFName" id="8909084F-3C08-5694-5844-0FD89A5AF5B7">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:10:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[local authority CEO  first name]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="la_ceoLName" id="8CEE89D6-14D9-619C-7290-45B37F59EE82">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:11:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[local authority CEO last name]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="la_phoneNo" id="A95AD577-E51F-6800-3F0A-B5631789E627">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:15:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[local authority phone number]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="la_totalArea" id="53184F60-F7CD-8FCE-0FE2-B0FAF8DDF199">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:15:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[local authority total area in square kilometers]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="la_type" id="BF0FC6A2-6EA2-A4AC-DF0C-1F3234E0823A">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:28:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[local authority type (BO - Borough, CT - City, DC - District Council, SH - Shire, TN - Town)]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<constraintName>chk_latype</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="BO" description="Borough"/>
+<valueDef value="CT" description="City"/>
+<valueDef value="DC" description="District Council"/>
+<valueDef value="SH" description="Shire"/>
+<valueDef value="TN" description="Town"/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FF4B3258-EE35-E975-F599-B75383DFB895" name="LOCAL_AUTHORITY PK">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:10:28 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>91F1B232-DEE3-46E6-FB1D-00BA17AEE7F3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

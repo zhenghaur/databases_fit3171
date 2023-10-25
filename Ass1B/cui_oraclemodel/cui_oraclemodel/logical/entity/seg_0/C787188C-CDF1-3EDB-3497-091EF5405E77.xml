@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C787188C-CDF1-3EDB-3497-091EF5405E77" name="BIN_TYPE">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:50:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bt_size" id="E5D799BF-1AC5-4D3B-AD04-C38A40946081">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:51:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin type size in litre]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="wt_id" id="92637500-1C48-9263-22E9-96BCD90AEA14">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:52:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste type id]]></commentInRDBMS>
+<generatorID>0DA1F09E-E48F-FF93-F6B2-D8E06C63FC0E</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<referedAttribute>254917ED-4D03-9AF1-8960-560520578DC2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bt_suppCost" id="5E356F0E-5150-BCB3-0743-8B9A6BEF69CB">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:51:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin type supply cost]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="59417BE1-25DC-E2F0-D7D5-836912DAD24C" name="BIN_TYPE PK">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:51:51 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E5D799BF-1AC5-4D3B-AD04-C38A40946081</attributeRef>
+<attributeRef>92637500-1C48-9263-22E9-96BCD90AEA14</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

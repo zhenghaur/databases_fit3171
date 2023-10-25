@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E8B6F25-B75E-911E-F9F1-90ABDC278CBE" name="CONTRACT_PRICING">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<generatorID>CEF05629-D13D-EFA0-38F9-83A100FADE15</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="contract_no" id="B5FC8380-387A-4992-4B29-7FA24CDC6287">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number]]></commentInRDBMS>
+<generatorID>44FC38EB-DE95-9230-9469-4EF940324AF8</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C397DD8-7277-5248-0A7E-5CE1FC6ACAE3" referredColumn="64C1ED9B-719F-9E3E-31DF-C5296DCF708B"/>
+</associations>
+</Column>
+<Column name="bt_size" id="0F4F0B4C-2C90-5E09-7B04-C3EED49469CB">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin type size in litre]]></commentInRDBMS>
+<generatorID>9455B908-7290-E845-3045-9577BD039937</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E653FE9-7923-3312-7DA6-76D6C606D226" referredColumn="B9EA1BF2-D0F1-2356-ACDC-1BDB7CFA8262"/>
+</associations>
+</Column>
+<Column name="wt_id" id="E0062F00-571D-6A7C-EDAC-97EBD2F84261">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste type id]]></commentInRDBMS>
+<generatorID>59F64861-A27A-CFB4-C0BC-EE0E259C82BB</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E653FE9-7923-3312-7DA6-76D6C606D226" referredColumn="612120F3-5AC0-1257-50BA-5D321D690118"/>
+</associations>
+</Column>
+<Column name="cp_supplyPrice" id="F30D670B-7C95-8184-7463-712DFF8AD035">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract supply price]]></commentInRDBMS>
+<generatorID>EB09F6D4-9BB9-5A30-68C0-AA035AE0CC96</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92936C42-E790-AE57-991A-E18C65BD564D" name="CONTRACT_PRICING_PK">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<generatorID>9398E488-7274-26C3-3551-FCA04A91EEFF</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F4F0B4C-2C90-5E09-7B04-C3EED49469CB"/>
+<colUsage columnID="E0062F00-571D-6A7C-EDAC-97EBD2F84261"/>
+<colUsage columnID="B5FC8380-387A-4992-4B29-7FA24CDC6287"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A140297E-9575-E25E-6AAB-C5CF5A4FC818" name="bintype_contractpricing">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<generatorID>62617BC4-91B4-5FED-9F1B-3AB1CD2E41B2</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F4F0B4C-2C90-5E09-7B04-C3EED49469CB"/>
+<colUsage columnID="E0062F00-571D-6A7C-EDAC-97EBD2F84261"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3104E53E-3501-E8BB-EBB8-1D6C2B03D60D" name="contract_contractpricing">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<generatorID>9E85DA1E-DEFC-F65B-0B49-F3F7B4CA0B50</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5FC8380-387A-4992-4B29-7FA24CDC6287"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

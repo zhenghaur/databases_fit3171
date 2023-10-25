@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="36F12ADF-E173-7B74-5AFD-04D592DFFA00" name="BIN_TYPE">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<generatorID>C787188C-CDF1-3EDB-3497-091EF5405E77</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bt_size" id="B9EA1BF2-D0F1-2356-ACDC-1BDB7CFA8262">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin type size in litre]]></commentInRDBMS>
+<generatorID>E5D799BF-1AC5-4D3B-AD04-C38A40946081</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bt_suppCost" id="D0E8272E-DC40-FD06-D124-E792ACECA9D9">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin type supply cost]]></commentInRDBMS>
+<generatorID>5E356F0E-5150-BCB3-0743-8B9A6BEF69CB</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="wt_id" id="612120F3-5AC0-1257-50BA-5D321D690118">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste type id]]></commentInRDBMS>
+<generatorID>92637500-1C48-9263-22E9-96BCD90AEA14</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="93C61919-D146-2F4D-8F89-FBAA85916EAD" referredColumn="3CBE630C-55D8-991D-D2CE-00105FACE377"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1FD05079-CDED-E764-32BF-7179F42B851A" name="BIN_TYPE_PK">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<generatorID>59417BE1-25DC-E2F0-D7D5-836912DAD24C</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9EA1BF2-D0F1-2356-ACDC-1BDB7CFA8262"/>
+<colUsage columnID="612120F3-5AC0-1257-50BA-5D321D690118"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9BAE1AFF-27B4-F536-AE2B-917D7740C7AD" name="wastetype_bintype">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:41:41 UTC</createdTime>
+<generatorID>0DA1F09E-E48F-FF93-F6B2-D8E06C63FC0E</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="612120F3-5AC0-1257-50BA-5D321D690118"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

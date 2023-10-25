@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C2256C85-5194-F683-D452-0CB82899E064" name="CONTRACT_COLLECTION">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:58:18 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contract_no" id="42C1916B-5A7B-4E4E-AF13-63DEF55D4302">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 07:02:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number]]></commentInRDBMS>
+<generatorID>F98F1542-A179-FA97-FE81-CBDB785F229E</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<referedAttribute>A84FE571-FB4D-D51B-F968-076E3D61FE85</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="wt_id" id="16FB7E1B-A1E8-1E3A-F03C-5A3D0D877E7E">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 07:02:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste type id]]></commentInRDBMS>
+<generatorID>C3BCE4A2-7E7C-CE61-DC63-66FA017A790C</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<referedAttribute>254917ED-4D03-9AF1-8960-560520578DC2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cc_costPerKg" id="45DE1602-5B62-8087-6E09-67AA52830CF8">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:58:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract collection cost per kg]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cc_freq" id="D38AB03B-8E41-DA21-132F-978A8B5BC1C0">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-05-02 03:36:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract collection frequency (W - Weekly, F - Fortnightly, M - Monthly)]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<constraintName>chk_ccfreq</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Fortnightly"/>
+<valueDef value="M" description="Monthly"/>
+<valueDef value="W" description="Weekly"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0B128A28-BA0F-4498-F36B-A3B1B7A5251A" name="CONTRACT_COLLECTION PK">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:59:07 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>42C1916B-5A7B-4E4E-AF13-63DEF55D4302</attributeRef>
+<attributeRef>16FB7E1B-A1E8-1E3A-F03C-5A3D0D877E7E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

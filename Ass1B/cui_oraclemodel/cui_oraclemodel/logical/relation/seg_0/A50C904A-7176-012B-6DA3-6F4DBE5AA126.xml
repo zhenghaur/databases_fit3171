@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="contractcollection_collection" directorySegmentName="seg_0" id="A50C904A-7176-012B-6DA3-6F4DBE5AA126">
+<createdBy>kabil</createdBy>
+<createdTime>2023-04-30 05:57:07 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<sourcePk>0B128A28-BA0F-4498-F36B-A3B1B7A5251A</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>describes</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C2256C85-5194-F683-D452-0CB82899E064</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1187EEC6-0CB3-72CE-E554-A12DFDEFA4C5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

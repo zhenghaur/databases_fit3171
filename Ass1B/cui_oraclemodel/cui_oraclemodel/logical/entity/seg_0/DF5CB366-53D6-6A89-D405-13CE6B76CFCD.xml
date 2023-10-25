@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DF5CB366-53D6-6A89-D405-13CE6B76CFCD" name="STREET">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:31:39 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="st_id" id="D34BF8C6-A401-9D4F-23D7-363992D43271">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:31:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[street id]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="la_name" id="6AB8FFFE-ED9D-1135-EDAE-2CAFD3407908">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:40:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[local authority name]]></commentInRDBMS>
+<generatorID>64F82AFA-A69A-8983-0E5D-C735A8761E93</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<referedAttribute>91F1B232-DEE3-46E6-FB1D-00BA17AEE7F3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_name" id="657D811F-CF6A-19D7-A6E2-FC10380E9D74">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:32:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[street name]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_length" id="6109491D-3F62-6603-D9CB-BBCF93CB05EB">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:32:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[street length in meters]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_roadSurface" id="839E6D59-A0C7-C115-B348-5A903EC87B37">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:33:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[street road surface (A - Asphalt, C - Concrete, U - Unsealed)]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<constraintName>chk_stRoadSurface</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description="Asphalt"/>
+<valueDef value="C" description="Concrete"/>
+<valueDef value="U" description="Unsealed"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_noLanes" id="09768754-2FD4-8D98-DED2-37A64DA05DDC">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:35:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[street number of lanes]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="86E51355-DA41-F95F-0399-5F9FA813C3EC" name="STREET PK">
+<createdBy>lzhau</createdBy>
+<createdTime>2023-04-27 06:31:53 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9795E7F4-909A-5993-6D59-A8BF3C7ED067" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D34BF8C6-A401-9D4F-23D7-363992D43271</attributeRef>
+<attributeRef>6AB8FFFE-ED9D-1135-EDAE-2CAFD3407908</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
